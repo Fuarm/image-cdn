@@ -1,0 +1,18 @@
+<svg width="18rpx" height="14rpx" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+  <!-- 阴影滤镜 -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"></stop>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1" flood-color="rgba(0,42,93,0.55)"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- 三角形 -->
+  <polygon points="0,0 18,0 9,14" fill="#3B73EB" filter="url(#shadow)"></polygon>
+
+  <!-- 顶部渐变覆盖 -->
+  <polygon points="0,0 18,0 9,14" fill="url(#grad)"></polygon>
+</svg>
